@@ -17,7 +17,11 @@ namespace ShapeMovingApp
         Point point;
         int step = 5;
         int size = 50;
+        bool isVertical = false;
+        bool isUpward = false;
+        bool isHorizontal = true;
         bool isForward = true;
+        
         Random random = new Random();
         public Form1()
         {
@@ -37,29 +41,65 @@ namespace ShapeMovingApp
         {
             brush.Color = color;
             e.Graphics.FillEllipse(brush, point.X, point.Y, size, size);
-            if (this.point.X + size >= this.PnlMainDrawing.Width)
+            if (isHorizontal)
             {
-                isForward = false;
+                if (this.point.X + size >= this.PnlMainDrawing.Width)
+                {
+                    isForward = false;
+                }
+                if (this.point.X <= 0)
+                {
+                    isForward = true;
+                }
             }
-            if(this.point.X <= 0)
+            if (isVertical)
             {
-                isForward = true;
+                if (this.point.Y + size >= this.PnlMainDrawing.Height)
+                {
+                    isUpward = true;
+                }
+                if (this.point.Y <= 0)
+                {
+                    isUpward = false;
+                }
             }
             this.PnlMainDrawing.Focus();
         }
 
         private void TimerShape_Tick(object sender, EventArgs e)
         {
-            if (isForward)
+            if (isHorizontal)
             {
-                TimerShape_Forward(step);
+                if (isForward)
+                {
+                    TimerShape_Forward(step);
+                }
+                else
+                {
+                    TimerShape_Backward(step);
+                }
             }
-            else
+            if (isVertical)
             {
-                TimerShape_Backward(step);
+                if (isUpward)
+                {
+                    TimerShape_Upward(step);
+                }
+                else
+                {
+                    TimerShape_DownWard(step);
+                }
             }
             this.PnlMainDrawing.Refresh();
 
+        }
+        private void TimerShape_Upward(int offset)
+        {
+            point.Y -= offset;
+        }
+        private void TimerShape_DownWard(int offset)
+        {
+            point.Y += offset;
         }
         private void TimerShape_Forward(int offset)
         {
@@ -76,22 +116,35 @@ namespace ShapeMovingApp
             {
                 case Keys.Up:
                     {
+                        isVertical = true ;
+                        isUpward = true;
+                        isHorizontal = false;
+
                         this.point.Y -= 5;
                         break;
                     }
                 case Keys.Down:
                     {
+                        isVertical = true;
+                        isUpward = false;
+                        isHorizontal = false;
                         this.point.Y += 5;
                         break;
                     }
                 case Keys.Left:
                     {
+                        isVertical = false;
+                        isForward = false;
+                        isHorizontal = true;
                         this.point.X -= 5;
                         isForward = false;
                         break;
                     }
                 case Keys.Right:
                     {
+                        isVertical = false;
+                        isForward = true;
+                        isHorizontal = true;
                         this.point.X += 5;
                         isForward = true;
                         break;
