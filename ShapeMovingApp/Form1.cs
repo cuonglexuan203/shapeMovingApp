@@ -98,12 +98,12 @@ namespace ShapeMovingApp
                     }
                 case Keys.L:
                     {
-                        this.size = 100;
+                        this.size  += 10;
                         break;
                     }
                 case Keys.S:
                     {
-                        this.size = 50;
+                        this.size -= 10;
                         break;
                     }
                 case Keys.C:
