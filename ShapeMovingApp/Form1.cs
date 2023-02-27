@@ -98,11 +98,20 @@ namespace ShapeMovingApp
                     }
                 case Keys.L:
                     {
+                        if(size >= 200)
+                        {
+                            break;
+                        }
                         this.size  += 10;
                         break;
                     }
                 case Keys.S:
                     {
+                        if(size <= 10)
+                        {
+                            
+                            break;
+                        }
                         this.size -= 10;
                         break;
                     }
