@@ -1,0 +1,11 @@
+D:\HCMUTE\Subject\2022-2023\Semester2\Windows_Programming\Practice\w5\ShapeMovingApp\ShapeMovingApp\bin\Debug\ShapeMovingApp.exe.config
+D:\HCMUTE\Subject\2022-2023\Semester2\Windows_Programming\Practice\w5\ShapeMovingApp\ShapeMovingApp\bin\Debug\ShapeMovingApp.exe
+D:\HCMUTE\Subject\2022-2023\Semester2\Windows_Programming\Practice\w5\ShapeMovingApp\ShapeMovingApp\bin\Debug\ShapeMovingApp.pdb
+D:\HCMUTE\Subject\2022-2023\Semester2\Windows_Programming\Practice\w5\ShapeMovingApp\ShapeMovingApp\obj\Debug\ShapeMovingApp.csproj.AssemblyReference.cache
+D:\HCMUTE\Subject\2022-2023\Semester2\Windows_Programming\Practice\w5\ShapeMovingApp\ShapeMovingApp\obj\Debug\ShapeMovingApp.csproj.SuggestedBindingRedirects.cache
+D:\HCMUTE\Subject\2022-2023\Semester2\Windows_Programming\Practice\w5\ShapeMovingApp\ShapeMovingApp\obj\Debug\ShapeMovingApp.Form1.resources
+D:\HCMUTE\Subject\2022-2023\Semester2\Windows_Programming\Practice\w5\ShapeMovingApp\ShapeMovingApp\obj\Debug\ShapeMovingApp.Properties.Resources.resources
+D:\HCMUTE\Subject\2022-2023\Semester2\Windows_Programming\Practice\w5\ShapeMovingApp\ShapeMovingApp\obj\Debug\ShapeMovingApp.csproj.GenerateResource.cache
+D:\HCMUTE\Subject\2022-2023\Semester2\Windows_Programming\Practice\w5\ShapeMovingApp\ShapeMovingApp\obj\Debug\ShapeMovingApp.csproj.CoreCompileInputs.cache
+D:\HCMUTE\Subject\2022-2023\Semester2\Windows_Programming\Practice\w5\ShapeMovingApp\ShapeMovingApp\obj\Debug\ShapeMovingApp.exe
+D:\HCMUTE\Subject\2022-2023\Semester2\Windows_Programming\Practice\w5\ShapeMovingApp\ShapeMovingApp\obj\Debug\ShapeMovingApp.pdb
